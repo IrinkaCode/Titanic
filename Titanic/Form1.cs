@@ -19,7 +19,7 @@ namespace Titanic
         private void button1_Click(object sender, EventArgs e)
         {
             AddEditForm form = new AddEditForm();
-            if(form.ShowDialog() == DialogResult.OK) 
+            if (form.ShowDialog() == DialogResult.OK)
             {
                 Titanic titanic = new Titanic();
                 titanic.Survived = form.comboBoxSurvived.SelectedIndex;
@@ -40,7 +40,7 @@ namespace Titanic
         }
         private async void Save(Titanic titanic)
         {
-            using(var db = new PostgresContext())
+            using (var db = new PostgresContext())
             {
                 db.Titanic.Add(titanic);
                 await db.SaveChangesAsync();
