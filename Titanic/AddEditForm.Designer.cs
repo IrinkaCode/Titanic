@@ -114,7 +114,7 @@
             comboBoxSex.Name = "comboBoxSex";
             comboBoxSex.Size = new Size(253, 28);
             comboBoxSex.TabIndex = 6;
-            comboBoxSex.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+
             // 
             // labelAge
             // 
@@ -246,7 +246,7 @@
             Controls.Add(comboBoxSurvived);
             Name = "AddEditForm";
             Text = "Информация о пассажире";
-            Load += AddEditForm_Load;
+
             ((System.ComponentModel.ISupportInitialize)numericUpDownAge).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownSibsp).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownParch).EndInit();
