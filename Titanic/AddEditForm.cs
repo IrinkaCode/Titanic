@@ -17,29 +17,34 @@ namespace Titanic
             InitializeComponent();
         }
 
-        //private void AddEditForm_Load(object sender, EventArgs e)
+        private void AddEditForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public AddEditForm(Titanic titanic)
+        {
+            InitializeComponent();
+            comboBoxSurvived.Text = titanic.Survived.ToString();
+            comboBoxClass.Text = titanic.Pclass.ToString();
+            textBoxName.Text = titanic.Passenger.ToString();
+            comboBoxSex.Text = titanic.Sex.ToString();
+            numericUpDownAge.Value = titanic.Age ?? 0;
+            numericUpDownSibsp.Value = titanic.Sibsp;
+            numericUpDownParch.Value = titanic.Parch;
+            textBoxTicket.Text = titanic.Ticket;
+            textBoxFare.Text = titanic.Fare.ToString();
+            textBoxCabin.Text = titanic.Cabin!.ToString();
+            comboBoxEmbarce.Text = titanic.Embarket.ToString();
+        }
+
+        //private void comboBoxSurvived_SelectedIndexChanged(object sender, EventArgs e)
         //{
 
-        //}
-
-        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-        //}
-        //public AddEditForm(Titanic titanic)
-        //{
-        //    InitializeComponent();
-        //    comboBoxSurvived.Text = titanic.Survived.ToString();
-        //    comboBoxClass.Text = titanic.Class.ToString();
-        //    textBoxName.Text = titanic.Passenger.ToString();
-        //    comboBoxSex.Text = titanic.Sex.ToString();
-        //    numericUpDownAge.Value = (decimal)titanic.Age??0;
-        //    numericUpDownSibsp.Value= titanic.Sibsp;
-        //    numericUpDownParch.Value= titanic.Parch;
-        //    textBoxTicket.Text = titanic.Ticket;
-        //    textBoxFare.Text = titanic.Fare.ToString();
-        //    textBoxCabin.Text= titanic.Cabin!.ToString();
-        //    comboBoxEmbarce.Text= titanic.Embarce.ToString();
         //}
     }
 }

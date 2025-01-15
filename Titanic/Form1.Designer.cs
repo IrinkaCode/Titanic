@@ -30,13 +30,15 @@
         {
             components = new System.ComponentModel.Container();
             dataGridView1 = new DataGridView();
-            panel1 = new Panel();
-            button1 = new Button();
             contextMenuStrip1 = new ContextMenuStrip(components);
             удалитьToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripComboBox1 = new ToolStripComboBox();
+            panel1 = new Panel();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel1.SuspendLayout();
             contextMenuStrip1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
@@ -49,6 +51,29 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(923, 556);
             dataGridView1.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { удалитьToolStripMenuItem, toolStripSeparator1, toolStripComboBox1 });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(182, 66);
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            удалитьToolStripMenuItem.Size = new Size(181, 24);
+            удалитьToolStripMenuItem.Text = "Удалить";
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(178, 6);
+            // 
+            // toolStripComboBox1
+            // 
+            toolStripComboBox1.Name = "toolStripComboBox1";
+            toolStripComboBox1.Size = new Size(121, 28);
             // 
             // panel1
             // 
@@ -68,19 +93,7 @@
             button1.TabIndex = 2;
             button1.Text = "+";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { удалитьToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(211, 56);
-            // 
-            // удалитьToolStripMenuItem
-            // 
-            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            удалитьToolStripMenuItem.Size = new Size(210, 24);
-            удалитьToolStripMenuItem.Text = "Удалить";
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -92,8 +105,8 @@
             Name = "Form1";
             Text = "Титаник";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel1.ResumeLayout(false);
             contextMenuStrip1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -104,5 +117,7 @@
         private Button button1;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem удалитьToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripComboBox toolStripComboBox1;
     }
 }
