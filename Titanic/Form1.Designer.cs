@@ -36,6 +36,7 @@
             toolStripComboBox1 = new ToolStripComboBox();
             panel1 = new Panel();
             button1 = new Button();
+            timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             contextMenuStrip1.SuspendLayout();
             panel1.SuspendLayout();
@@ -119,5 +120,6 @@
         private ToolStripMenuItem удалитьToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.Timer timer;
     }
 }

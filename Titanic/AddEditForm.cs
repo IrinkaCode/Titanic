@@ -29,7 +29,7 @@ namespace Titanic
         public AddEditForm(Titanic titanic)
         {
             InitializeComponent();
-            comboBoxSurvived.Text = titanic.Survived.ToString();
+            comboBoxSurvived.SelectedIndex = (titanic.Survived == 0) ? 0 : 1;
             comboBoxClass.Text = titanic.Pclass.ToString();
             textBoxName.Text = titanic.Passenger.ToString();
             comboBoxSex.Text = titanic.Sex.ToString();

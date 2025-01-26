@@ -9,14 +9,15 @@ namespace Titanic
         {
             InitializeComponent();
             LoadData();
-
         }
+
         private async void LoadData()
         {
             using (PostgresContext db = new PostgresContext())
             {
                 dataGridView1.DataSource = await db.Titanics.ToListAsync();
             }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
